@@ -1,0 +1,6 @@
+aiocfscrape==1.0.0
+beautifulsoup4==4.9.3
+graia-ariadne[full]==0.11.2
+mypy
+requests~=2.27.1
+selenium==4.0.0

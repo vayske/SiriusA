@@ -1,0 +1,30 @@
+# name: gh-action
+# on: [push]
+# jobs:
+#  mypy:
+#    name: mypy
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: check out repo
+#        uses: actions/checkout@v3
+#      - name: set up Python
+#        uses: actions/setup-python@v3
+#        with:
+#          python-version: '3.8'
+#      - name: install requirements
+#        run: pip install -r sirius/requirements.txt
+#      - name: run mypy
+#        run: mypy --install-types --non-interactive --ignore-missing-imports sirius
+#  build-docs:
+#    name: build-docs
+#    needs: mypy
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: ammaraskar/sphinx-action@master
+#        with:
+#          docs-folder: "docs/"
+#      - uses: actions/upload-artifact@v1
+#        with:
+#          name: DocumentationHTML
+#          path: docs/_build/html/

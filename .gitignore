@@ -1,0 +1,10 @@
+**/__pycache__
+**/*.pyc
+**/.idea
+**/test*
+**/*.log
+logs/
+*.jpg
+*.png
+**/*.json
+**/*.png
